@@ -25,9 +25,10 @@ int totalGoals()
 
 int topScorer()
 {
-    int maxG = 0, winner = 0;
+    int maxG = 0;
+    int winner = 0;
 
-    for (int p = 0; p < PLAYERS; p++)
+    for (int p = 1; p < PLAYERS; p++)
     {
         if (playerGoals[p] > maxG)
         {
